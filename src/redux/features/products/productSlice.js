@@ -35,6 +35,7 @@ const productSlice = createSlice({
     initialState,
     reducers:{
         addProduct:(state , action)=>{
+            console.log(action)
             state.push({
                 id: state.length > 0 ? state[state.length - 1].id : 1,
                 ...action.payload

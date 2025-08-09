@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductCard = ({product}) => {
     const {id,name,image,price,category,date} = product || {}
-    console.log(product)
+    
   return (
     <div>
         <div className="card bg-white w-96 shadow-sm">
