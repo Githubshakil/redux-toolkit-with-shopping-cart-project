@@ -6,6 +6,7 @@ import store from "./redux/store.js";
 import { BrowserRouter, Route, Routes } from "react-router";
 import HomePage from "./pages/home/HomePage.jsx";
 import ProductUpload from "./pages/products/ProductUpload.jsx";
+import Carts from "./pages/Carts/Carts.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -15,7 +16,7 @@ createRoot(document.getElementById("root")).render(
         <Route element={<App />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/items-upload" element={<ProductUpload />} />
-          <Route path="/cart" element={<div>Cart Page</div>} />
+          <Route path="/cart" element={<Carts/>} />
         </Route>
       </Routes>
     </BrowserRouter>
