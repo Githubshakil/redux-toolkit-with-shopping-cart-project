@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store.js";
 import { BrowserRouter, Route, Routes } from "react-router";
 import HomePage from "./pages/home/HomePage.jsx";
-import ProductUpload from "./components/ProductUpload.jsx";
+import ProductUpload from "./pages/products/ProductUpload.jsx";
 
 
 createRoot(document.getElementById("root")).render(
