@@ -11,9 +11,7 @@ import Product from './pages/product/product.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-    <App/>
-  </Provider>,
-  <BrowserRouter>
+    <BrowserRouter>
     <Routes>
       <Route element={<App/>}>
       <Route path='/' element={<HomePage/>}/>
@@ -24,4 +22,6 @@ createRoot(document.getElementById('root')).render(
       </Route>
     </Routes>
   </BrowserRouter>,
+  </Provider>,
+ 
 )
