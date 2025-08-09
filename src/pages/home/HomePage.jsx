@@ -5,7 +5,7 @@ import ProductUpload from "../products/ProductUpload";
 
 const HomePage = () => {
   const products = useSelector((state) => state.products);
-  console.log(products);
+  
   return (
     <div className="py-8">
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-8">

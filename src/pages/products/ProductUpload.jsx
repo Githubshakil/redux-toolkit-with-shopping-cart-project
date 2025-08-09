@@ -1,35 +1,19 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
-import {addProduct} from '../../redux/features/products/productSlice'
+import { addProduct } from "../../redux/features/products/productSlice";
 
 const ProductUpload = () => {
-
-
-
-  const dispatch = useDispatch()
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const dispatch = useDispatch();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
   const onSubmit = (data) => {
-    dispatch(addProduct(data))
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    dispatch(addProduct(data));
+  };
 
   return (
     <div className="max-w-md mx-auto bg-white shadow-md rounded-lg p-6">
@@ -71,6 +55,21 @@ const ProductUpload = () => {
             <option value="bags">Bags</option>
             <option value="electronics">Electronics</option>
           </select>
+        </div>
+
+        {/* description */}
+        <div>
+          <label className="text-sm font-medium block text-gray-600">
+            Product Description
+          </label>
+          <input
+            type="text"
+            name="description"
+            id="description"
+            {...register("description", { required: true })}
+            placeholder="Add product Description"
+            className="w-full bg-gray-50 text-gray-700 mt-1 p-2 rounded-lg focus:outline focus:ring-1 border border-gray-200 focus:ring-indigo-500"
+          />
         </div>
 
         {/* product image Url */}
@@ -119,7 +118,12 @@ const ProductUpload = () => {
           </div>
         </div>
 
-        <button type="submit" className="btn btn-primary w-full bg-indigo-500 hover:bg-indigo-700">Add Product</button>
+        <button
+          type="submit"
+          className="btn btn-primary w-full bg-indigo-500 hover:bg-indigo-700"
+        >
+          Add Product
+        </button>
       </form>
     </div>
   );
