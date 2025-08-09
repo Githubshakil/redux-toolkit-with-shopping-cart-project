@@ -7,7 +7,7 @@ const initialState =[
         name:'Casual t-shirt',
         price: 120,
         category: "T-shirt",
-        image:"https://www.pexels.com/photo/person-in-black-crew-neck-t-shirt-and-blue-denim-jeans-4066293/",
+        image:"https://media.istockphoto.com/id/1328049157/photo/mens-short-sleeve-t-shirt-mockup-in-front-and-back-views.webp?s=2048x2048&w=is&k=20&c=UyALGfL7s6Yq-dLxYxxlwFAiwh4fUGrFv5CH36iOyNc=",
         data: "2025-08-09",
     },
     {
@@ -15,7 +15,7 @@ const initialState =[
         name:'Casual t-shirt',
         price: 140,
         category: "T-shirt",
-        image:"https://www.pexels.com/photo/man-wearing-white-t-shirt-and-black-pants-1561011/",
+        image:"https://media.istockphoto.com/id/1323480815/photo/navy-t-shirt.webp?s=2048x2048&w=is&k=20&c=Ydszzx-5Yn3LHcKXqYmiswGmaqloP4N5EMn_3v7-6j4=",
         data: "2025-08-09",
     },
     {

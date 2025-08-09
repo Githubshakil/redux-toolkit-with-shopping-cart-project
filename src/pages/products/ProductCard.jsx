@@ -5,17 +5,19 @@ const ProductCard = ({product}) => {
     console.log(product)
   return (
     <div>
-        <div className="card bg-base-100 w-96 shadow-sm">
+        <div className="card bg-white w-96 shadow-sm">
   <figure>
     <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
+      src={image}
+      alt={name}
+      className='w-full h-48 object-cover' />
   </figure>
-  <div className="card-body">
-    <h2 className="card-title">Card Title</h2>
+  <div className="card-body text-gray-700">
+    <h2 className="card-title">{name}</h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+    <div className="card-actions items-center justify-end">
+        <p className='text-xl font-semibold'>${price}</p>
+      <button className="btn bg-indigo-500 text-white hover:bg-indigo-700 hover:text-yellow-300 transition-colors duration-300">Add to Cart</button>
     </div>
   </div>
 </div>
