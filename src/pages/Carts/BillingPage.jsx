@@ -26,7 +26,7 @@ const BillingPage = () => {
         <p className="text-gray-700">{subTotal > 0 ? "$4.99" : 0}</p>
       </div>
       <hr className="my-4" />
-      <div className="flex justify-between">
+      <div className="flex justify-between text-black">
         <p className="text-lg font-bold">Total</p>
         <div className="">
           <p className="mb-1 text-lg font-bold">${subTotal > 0 ? totalBillings(subTotal) : 0} USD</p>
